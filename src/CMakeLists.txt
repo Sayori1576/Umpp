@@ -1,0 +1,10 @@
+include_directories(${CMAKE_SOURCE_DIR}/include)
+set(SRCS Umpp main.cpp )
+add_executable(${SRCS})
+set(CMAKE_CXX_STANDARD 20)
+target_compile_options(Umpp PUBLIC -Wall -Werror)
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+
