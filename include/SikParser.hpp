@@ -4,9 +4,9 @@ class Sikparser
 public:
     Sikparser(ST s,CT p='.',CT m=' ', CT mi=',' ):str(s),plusstr(p),modulatestr(m),minusstr(mi){};
     int parse(int now=0);
-    void changetext(ST t)
+    void changetext(const ST& t)
     {
-        str(t);
+        str=t;
     }
 private:
     ST str;
