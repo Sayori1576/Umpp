@@ -2,9 +2,8 @@
 #include "SikParser.hpp"
 int main()
 {
-    Sikparser<std::string,char> parser("........... ........");
+    Datatype d;
+    Sikparser<std::wstring,wchar_t> parser(d);
     
-   cout<<parser.parse()<<endl;
-   parser.changetext("... ,,, ...");
-   cout<<parser.parse()<<endl;
+   cout<<parser.parse(L"어. 어어")<<endl;
 }

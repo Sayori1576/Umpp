@@ -1,5 +1,5 @@
 include_directories(${CMAKE_SOURCE_DIR}/include)
-set(SRCS Umpp main.cpp )
+set(SRCS Umpp main.cpp Datatype.cpp )
 add_executable(${SRCS})
 set(CMAKE_CXX_STANDARD 20)
 target_compile_options(Umpp PUBLIC -Wall -Werror)
