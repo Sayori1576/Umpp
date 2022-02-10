@@ -1,9 +1,10 @@
 #include "Default.h"
 #include "SikParser.hpp"
+#include "ByeonsuParser.hpp"
 int main()
 {
     Datatype d;
-    Sikparser<std::wstring,wchar_t> parser(d);
+    SikParser<std::wstring,wchar_t,std::wistream&> parser(d);
     
-   cout<<parser.parse(L"어. 어어")<<endl;
+   cout<<parser.parse(L"식? 식?")<<endl;
 }
